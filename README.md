@@ -1,11 +1,11 @@
 Couchbase River Plugin for ElasticSearch
 ==================================
 
-This module is experimental.  Currently the mechanism to track and resume progress is unreliable.  Future version will do proper checkpointing.  It should NOT be used in production.
+This module is experimental.  Currently the mechanism to track and resume progress is unreliable.  Future version will do proper checkpointing.  It should **NOT** be used in production.
 
 In order to install the plugin, simply run: `bin/plugin -install mschoch/elasticsearch-river-couchbase/1.0.0-SNAPSHOT`.
 
-The Couchbase River allows to automatically index Couchbase and make it searchable using the TAP (http://www.couchbase.com/wiki/display/couchbase/TAP+Protocol) stream couchbase provides. Setting it up is as simple as executing the following against elasticsearch:
+The Couchbase River allows to automatically index Couchbase and make it searchable using the TAP (http://www.couchbase.com/wiki/display/couchbase/TAP+Protocol) stream Couchbase provides. Setting it up is as simple as executing the following against elasticsearch:
 
     curl -XPUT 'localhost:9200/_river/my_db/_meta' -d '{
         "type" : "couchbase",
