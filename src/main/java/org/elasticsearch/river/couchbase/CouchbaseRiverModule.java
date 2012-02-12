@@ -1,4 +1,4 @@
-package com.couchbase.elasticsearch.river;
+package org.elasticsearch.river.couchbase;
 
 import org.elasticsearch.common.inject.AbstractModule;
 import org.elasticsearch.river.River;
