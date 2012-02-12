@@ -36,7 +36,7 @@ Bulking is automatically done in order to speed up the indexing process. If with
 Script Filters
 =========
 
-Filtering can also be performed by providing a script (default to JavaScript) that will further process each changed item within the TAP stream. The json provided to the script is under a var called **ctx** with the relevant seq stream change (for example, **ctx.key** will refer to the key, **ctx.value** will refer to the value, or **ctx.deleted** is the flag if its deleted or not).
+Filtering can be performed by providing a script (default to JavaScript) that will further process each changed item within the TAP stream. The json provided to the script is under a var called **ctx** with the relevant seq stream change (for example, **ctx.key** will refer to the key, **ctx.value** will refer to the value, or **ctx.deleted** is the flag if its deleted or not).
 
 Note, this feature requires the `lang-javascript` plugin.
 
