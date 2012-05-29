@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.elasticsearch</groupId>
     <artifactId>elasticsearch-river-couchbase</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>Couchbase River for ElasticSearch</description>
     <inceptionYear>2012</inceptionYear>
@@ -25,7 +25,7 @@
     </parent>
 
     <properties>
-        <elasticsearch.version>0.18.7</elasticsearch.version>
+        <elasticsearch.version>0.19.2</elasticsearch.version>
     </properties>
 
     <repositories>
@@ -46,12 +46,6 @@
             </snapshots>
         </repository>
         
-        <!-- apparently this is needed to find the jms artifact -->
-<!--         <repository>
-            <id>repository.jboss.org-public</id>
-            <name>JBoss repository</name>
-            <url>https://repository.jboss.org/nexus/content/groups/public</url>
-        </repository> -->
     </repositories>
 
     <dependencies>
@@ -65,8 +59,7 @@
         <dependency>
             <groupId>couchbase</groupId>
             <artifactId>couchbase-client</artifactId>
-            <version>1.0.1</version>
-            <scope>compile</scope>
+            <version>1.1-dp-mschoch</version>
                         <exclusions>
             <exclusion>
                 <groupId>com.sun.jmx</groupId>
